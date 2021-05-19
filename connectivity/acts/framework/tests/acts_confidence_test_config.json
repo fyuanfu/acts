@@ -8,7 +8,7 @@
             "MagicDevice": ["Magic!"]
         }
     ],
-    "logpath": "/tmp/logs",
+    "logpath": "./logs",
     "testpaths": ["./"],
     "icecream": "mememe",
     "extra_param": "haha"

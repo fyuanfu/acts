@@ -43,6 +43,7 @@ from acts.event import event_bus
 from acts.libs.proc import job
 from acts.metrics.loggers.usage_metadata_logger import record_api_usage
 
+import uiautomator2 as u2
 MOBLY_CONTROLLER_CONFIG_NAME = "AndroidDevice"
 ACTS_CONTROLLER_REFERENCE_NAME = "android_devices"
 
@@ -387,7 +388,8 @@ class AndroidDevice:
         # Device info cache.
         self._user_added_device_info = {}
         self._sdk_api_level = None
-
+        self.uiautomator=u2.connect(serial)
+        print(self.uiautomator.info)
     def clean_up(self):
         """Cleans up the AndroidDevice object and releases any resources it
         claimed.

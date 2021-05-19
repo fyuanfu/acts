@@ -1,3 +1,9 @@
+release note:
+
+2021.05.9
+add uiautomator function
+
+
 # Android Comms Test Suite
 The Android Comms Test Suite, is a lightweight Python-based automation tool set
 that is used to perform automated testing of current and upcoming Android

@@ -33,5 +33,7 @@ class SampleTest(BaseTestClass):
 
     def test_make_toast(self):
         for ad in self.android_devices:
-            ad.droid.makeToast("Hello World.")
+            self.log.info("test_make_toast")
+            ad.uiautomator.press("home")
+
         return True
