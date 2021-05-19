@@ -16,7 +16,7 @@ self.android_device.uiautomator.info
 2.install uiautomator-python
   pip3 install -U uiautomator2
   
-##example 
+## example 
 ```
 class SampleTest(BaseTestClass):
     def setup_class(self):
